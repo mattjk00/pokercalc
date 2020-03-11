@@ -7,7 +7,7 @@ function calculate() {
     let n = document.getElementById("n").value;
 
     // r = [(1 + 2*S/P) ^(1/n) - 1]/2
-    let r = ((1 + 2 * s/p) ^ (1/n) - 1)/2;
+    let r = 1 / (((1 + 2 * s/p) ^ (1/n) - 1)/2);
     
     let ansEle = document.getElementById("ans");
     ansEle.innerHTML = "r = " + r;
